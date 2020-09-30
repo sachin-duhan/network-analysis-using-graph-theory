@@ -134,36 +134,24 @@ user_stats.columns = [0, 1, 2, 3]
 seed = random.randint(1, 100)
 
 app.layout = html.Div([
-
     html.Div(className="div-top", children=[
-
         html.Div(className="div-top-inner", children=[
-
             html.Div(className="div-desc", children=[
-
                 html.Div(className="div-title", 
                     children=html.Span(className="title", children='Instagram Network Analysis')
                 ),
-
                 html.Div(className="div-desc-inner", children=[
-
-                    
-
                     html.Div(className="links", children=[
-
                         html.A(
                             '@sachinduhan-26 @tanay', 
                             href='#',
                         ),
-
                         html.A(
                             'Check code', 
-                            href='https://github.com/kahxuan/insta_network_analysis', # change this!
+                            href='https://github.com/sachin-duhan26/Instagram-network-analysis',  # change this!
                             target="_blank"
                         ),
-
                     ]),
-
                     html.Div(className="caption", children="On the plot, click and drag to zoom in, double click to rescale."),
                     html.Div(className="caption", children="On the legend, click or double click to filter."),
                     html.Div(className="caption", children='Usernames in the network are masked with randomly generated string.')
@@ -172,18 +160,14 @@ app.layout = html.Div([
             ]),
 
             html.Div(className="div-user-graph", children=[
-
                 html.Div(className="div-graph-top", children=[
-
                     html.Div(html.Span('Percentage of Mutual Connection', className="graph-title"), className="div-graph-title"),
-
                         dcc.Graph(
                             className='graph-user',
                             config={'displayModeBar': False},
                             figure=plot_users(user_stats)
                         )   
                 ])         
-
             ])
         ])
     ]),
