@@ -2,7 +2,7 @@
 
 This project helps us to better understand our Instagram network by detecting and analysing clusters within our Instagram friends.
 
-![Screenshot of dashboard](https://github.com/kahxuan/insta_clustering/blob/master/assets/screenshot.png)
+![Screenshot of dashboard](https://github.com/sachin-duhan26/Instagram-network-analysis/blob/master/assets/screenshot.png)
 
 ## Data collection
 Follower and followee lists are collected using [Instaloader](https://instaloader.github.io). Two users are considered to be connected when they are following each other so that the graph is non-directional. My network only includes users whom I connect with.
