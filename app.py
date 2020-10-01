@@ -50,15 +50,10 @@ def render_tab(name, res_dict):
         selected_style=tab_style_selected, 
         children=[
             html.Div(className="div-btm", children=[
-
                 html.Div(className="div-btm-inner", children=[
-
                     html.Div(className="div-network-graph", children=[
-
                         html.Div(className="div-graph-btm", children=[
-
                             html.Div(html.Span('Network Graph', className="graph-title"), className="div-graph-title"),
-
                             dcc.Graph(
                                 className='graph-network',
                                 config={'displayModeBar': False},
@@ -70,7 +65,6 @@ def render_tab(name, res_dict):
                                     seed)
                             )
                         ])
-
                     ]),
 
                     html.Div(className="div-mma-graph", children=[
@@ -92,15 +86,10 @@ def render_tab(name, res_dict):
                         ])
 
                     ]),
-
                     html.Div(className="div-heatmap-graph", children=[
-
                         html.Div(className="div-graph-btm", children=[
-                            
                             html.Div(className="div-graph-btm", children=[
-
                                 html.Div(html.Span('Closeness Between Clusters', className="graph-title"), className="div-graph-title"),
-
                                 dcc.Graph(
                                     className='graph-heatmap',
                                     config={'displayModeBar': False},
@@ -109,18 +98,15 @@ def render_tab(name, res_dict):
                                 )
                             ])
                         ])
-                        
                     ])
-
                 ])
-                
         ])
 ])
 
 
 app = dash.Dash(__name__)
 server = app.server
-app.title = 'Instagram Network Analysis'
+app.title = 'Network Analysis'
 
 with open(os.path.join('output', 'cluster1.json')) as f:
     group1 = json.load(f)
@@ -138,7 +124,7 @@ app.layout = html.Div([
         html.Div(className="div-top-inner", children=[
             html.Div(className="div-desc", children=[
                 html.Div(className="div-title", 
-                    children=html.Span(className="title", children='Instagram Network Analysis')
+                    children=html.Span(className="title", children='Network Analysis')
                 ),
                 html.Div(className="div-desc-inner", children=[
                     html.Div(className="links", children=[
@@ -148,7 +134,7 @@ app.layout = html.Div([
                         ),
                         html.A(
                             'Check code', 
-                            href='https://github.com/sachin-duhan26/Instagram-network-analysis',  # change this!
+                            href='https://github.com/sachin-duhan26/network-analysis-using-graph-theory',
                             target="_blank"
                         ),
                     ]),
@@ -156,7 +142,6 @@ app.layout = html.Div([
                     html.Div(className="caption", children="On the legend, click or double click to filter."),
                     html.Div(className="caption", children='Usernames in the network are masked with randomly generated string.')
                 ])
-
             ]),
 
             html.Div(className="div-user-graph", children=[
