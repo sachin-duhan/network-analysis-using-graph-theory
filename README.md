@@ -1,6 +1,6 @@
-# Instagram network analysis
+# Network Analysis using Graph Theory
 
-This project helps us to better understand our Instagram network by detecting and analysing clusters within our Instagram friends.
+This project helps us to better understand our social media network by detecting and analysing clusters within our social media friends.
 
 ## Data collection
 Follower and followee lists are collected using [Instaloader](https://instaloader.github.io). Two users are considered to be connected when they are following each other so that the graph is non-directional. My network only includes users whom I connect with.
