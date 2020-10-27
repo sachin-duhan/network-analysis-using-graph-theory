@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.display-light {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.fa-hover:hover {
+    color: #000;
+}

@@ -103,7 +103,6 @@ def render_tab(name, res_dict):
         ])
 ])
 
-
 app = dash.Dash(__name__)
 server = app.server
 app.title = 'Network Analysis'
