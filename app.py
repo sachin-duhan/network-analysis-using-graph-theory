@@ -7,6 +7,7 @@ import dash
 import dash_core_components as dcc
 import dash_html_components as html
 from util import plot_users, plot_network, plot_clusters, plot_closeness
+from flask import render_template
 
 def render_tab(name, res_dict):
 
@@ -103,7 +104,9 @@ def render_tab(name, res_dict):
         ])
 ])
 
+
 app = dash.Dash(__name__)
+# app = Flask(__name__)
 server = app.server
 app.title = 'Network Analysis'
 
@@ -165,9 +168,6 @@ app.layout = html.Div([
     ])
 
 ])
-
-
-
 
 if __name__ == '__main__':
     app.run_server(debug=True)
