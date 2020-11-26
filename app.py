@@ -131,7 +131,7 @@ app.layout = html.Div([
                 html.Div(className="div-desc-inner", children=[
                     html.Div(className="links", children=[
                         html.A(
-                            '@sachinduhan-26 @tanay', 
+                            '@sachinduhan-26 @tanay @adarsh_aggarwal', 
                             href='#',
                         ),
                         html.A(
