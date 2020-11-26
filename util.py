@@ -349,7 +349,6 @@ def plot_clusters(sizes, maxs, mins, avgs, cluster_names):
     return fig
 
 
-
 def plot_closeness(closeness):
 
     cluster_ids = list(range(1, len(closeness) + 1))
@@ -374,31 +373,4 @@ def plot_closeness(closeness):
     fig = go.Figure(data=trace, layout=layout)
 
     return fig
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

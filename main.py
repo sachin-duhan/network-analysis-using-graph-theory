@@ -7,7 +7,8 @@ import pandas as pd
 import plotly.graph_objects as go
 
 data_dir = 'masked'
-my_username = 'k_xuanlim'
+my_username = 'sachin-duhan26'
+password = "#####"
 
 connections = {}
 users = [file[:-4] for file in os.listdir(data_dir)]
