@@ -134,8 +134,8 @@ app.layout = html.Div([
                             href='#',
                         ),
                         html.A(
-                            '', 
-                            href='#',
+                            'Check code', 
+                            href='https://github.com/gautam-sankalp/software-engineering-project',
                             target="_blank"
                         ),
                     ]),
