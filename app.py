@@ -130,12 +130,12 @@ app.layout = html.Div([
                 html.Div(className="div-desc-inner", children=[
                     html.Div(className="links", children=[
                         html.A(
-                            '@sachinduhan-26 @singhaniatanay @arderagarwal',
+                            '',
                             href='#',
                         ),
                         html.A(
                             'Check code', 
-                            href='https://github.com/sachin-duhan26/network-analysis-using-graph-theory',
+                            href='#',
                             target="_blank"
                         ),
                     ]),
