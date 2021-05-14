@@ -134,7 +134,7 @@ app.layout = html.Div([
                             href='#',
                         ),
                         html.A(
-                            'Check code', 
+                            '', 
                             href='#',
                             target="_blank"
                         ),
